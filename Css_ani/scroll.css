@@ -1,0 +1,149 @@
+.container {
+    width: 360px;
+    height: 640px;
+}
+
+.welcome {
+    background-color: #FFFBF1;
+    padding:150px 130px 390px;
+}
+
+.welcome__circle {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #707070;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.welcome__txt {
+    margin-top: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+.todo__wrap {
+    padding: 20px 0px 20px 15px;
+    background-color: #FEF1E2;
+}
+.todo__title {
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+.todo__list {
+    font-size: 15px;
+}
+.todo__list_item {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+
+.todo__list_item-on:nth-child(1) {
+    animation-name: fadeInToLeft;
+    animation-delay: 0.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.todo__list_item-on:nth-child(2) {
+    animation-name: fadeInToLeft;
+    animation-delay: 1.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.todo__list_item-on:nth-child(3) {
+    animation-name: fadeInToLeft;
+    animation-delay: 2.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.todo__list_item-on:nth-child(4) {
+    animation-name: fadeInToLeft;
+    animation-delay: 3.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+.todo__list_item-on:nth-child(5) {
+    animation-name: fadeInToLeft;
+    animation-delay: 4.2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.list_circle {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url("./image/check_circle.png") no-repeat center;
+    background-size: 100% auto;
+    margin-right: 4px;
+}
+.rect {
+    position: relative;
+    padding: 50px 123px 100%;
+    background-color: #FFE8DF;
+}
+
+.left_center {
+    position: absolute;
+    left: -10%;
+    width: 114px;
+    height: 114px;
+    border: 1px solid transparent;
+    background-color: #A1CAFF;
+}
+.left_center-ani {
+    animation: toLeft 1s ease-in forwards;
+}
+.right_center {
+    position: absolute;
+    right: -10%;
+    top: 40%;
+    margin-top: 100px;
+    width: 114px;
+    height: 114px;
+    border: 1px solid transparent;
+    background-color: #B0A1FF;
+}
+
+.right_center-ani {
+    animation: toRight 1s ease-in forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInToLeft {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes toLeft {
+    0% {
+        left:-10%;
+    }
+    100% {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@keyframes toRight {
+    0% {
+        right:-10%;
+    }
+    100% {
+        right: 50%;
+        transform: translateX(+50%);
+    }
+}
