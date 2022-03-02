@@ -1,0 +1,99 @@
+.photo_circle {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.photo_circle__wrap {
+    position: relative;
+}
+
+.photo_circle__wrap-guide::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 160'%3e%3cpath fill='%23FF5656' d='M0 18V2.5C0 1.1 1.1 0 2.5 0S5 1.1 5 2.5V18c0 .6-.4 1-1 1H1c-.6 0-1-.4-1-1z'/%3e%3cpath fill='%23FF5656' d='M18 5H2.5C1.1 5 0 3.9 0 2.5S1.1 0 2.5 0H18c.6 0 1 .4 1 1v3c0 .6-.4 1-1 1zM5 142v15.5c0 1.4-1.1 2.5-2.5 2.5S0 158.9 0 157.5V142c0-.6.4-1 1-1h3c.6 0 1 .4 1 1z'/%3e%3cpath fill='%23FF5656' d='M18 160H2.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5H18c.6 0 1 .4 1 1v3c0 .6-.4 1-1 1zM155 18V2.5c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5V18c0 .6-.4 1-1 1h-3c-.6 0-1-.4-1-1z'/%3e%3cpath fill='%23FF5656' d='M142 0h15.5c1.4 0 2.5 1.1 2.5 2.5S158.9 5 157.5 5H142c-.6 0-1-.4-1-1V1c0-.6.4-1 1-1zM160 142v15.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V142c0-.6.4-1 1-1h3c.6 0 1 .4 1 1z'/%3e%3cpath fill='%23FF5656' d='M142 155h15.5c1.4 0 2.5 1.1 2.5 2.5s-1.1 2.5-2.5 2.5H142c-.6 0-1-.4-1-1v-3c0-.6.4-1 1-1z'/%3e%3c/svg%3e") center no-repeat;
+    background-size: 100%;
+}
+
+.photo_circle__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f1f1f1;
+    border-radius: 50%;
+    background-color: #e1e1e1;
+    background-repeat: no-repeat;
+    position: center;
+    size: cover;    
+}
+
+.photo_circle__img-bd_w, .photo_circle__img-rd {
+    border: 2px solid #ffffff;
+}
+
+.photo_circle__img-36 {
+    width: 36px;
+    height: 36px;
+}
+
+.photo_circle__img-110 {
+    width: 110px;
+    height: 110px;
+}
+
+.photo__circle__badge {
+    position: absolute;
+}
+
+.photo__circle__badge-top_right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.photo__circle__badge-top_left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.photo__circle__badge-top_center {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.photo__circle__badge-bot_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.photo__circle__badge-bot_left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.photo__circle__badge-bot_center {
+    position: absolute;
+    /* 왜 -6px? */
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.photo__circle__dim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.4);
+}

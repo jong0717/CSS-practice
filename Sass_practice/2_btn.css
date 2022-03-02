@@ -1,0 +1,176 @@
+.btn__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn__btn_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.btn__btn_default {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #3654AE;
+    box-sizing: border-box;
+}
+
+@media (hover:hover) {
+    .btn__btn_default:hover {
+        background-color: lighten(#3654AE,3%);
+    }
+}
+
+.btn__btn_default_txt {
+    color: #ffffff;
+    white-space: nowrap;
+}
+
+.btn__btn_default-m {
+    height: 44px;
+}
+
+.btn__btn_default:active {
+    background-color: darken(#3654AE, 3%);
+}
+
+.btn__btn_default-disabled {
+    background-color: #d4d4d4;
+    cursor: default;
+}
+
+.btn__btn_default-disabled:active {
+    background-color: #d4d4d4;
+}
+@media (hover:hover) {
+    .btn__btn_default-disabled:hover {
+        background-color: #d4d4d4;
+    }
+}
+
+
+.btn__btn_line {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #3654AE;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #3654AE;
+    box-sizing: border-box;
+}
+
+@media (hover:hover) {
+    .btn__btn_line:hover {
+        border-color: lighten(#3654AE, 3%);
+    }
+}
+
+.btn__btn_line_txt {
+    /* 누구꺼 상속을 받는건가..? */
+    color: inherit;
+}
+
+.btn__btn_line_txt.btn__btn_line-s {
+    font-size: 13px;
+}
+
+.btn__btn_line_txt.btn__btn_line-disabled {
+    color: #b8b8b8;
+}
+
+.btn__btn_line-ab {
+    position: absolute;
+    right: 13px;
+    bottom: 15px;
+    left: 13px;
+    width: auto;
+}
+
+.btn__btn_line-m {
+    height: 44px;
+}
+
+.btn__btn_line-s {
+    height: 30px;
+}
+
+.btn__btn_line:active {
+    background-color: #EFF3FF;
+}
+
+.btn__btn_line-disabled {
+    border-color: #e1e1e1;
+    cursor: default;
+}
+
+@media (hover:hover) {
+    .btn__btn_line:hover {
+        border-color: #e1e1e1;
+    }
+}
+
+.btn__btn_line-3_1 {
+    flex: 0 0 auto;
+    width: 32%;
+    margin-right: 2%;
+}
+
+.btn__btn_line-4_1 {
+    flex: 0 0 auto;
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+.btn__btn_bot {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px 8px 0 0;
+    background-color: #3654AE;
+}
+
+@media (hover:hover) {
+    .btn__btn_bot:hover {
+        background-color: lighten(#3654AE, 3%);
+    }
+}
+
+.btn__btn_bot:active {
+    background-color: #d4d4d4;
+}
+
+.btn__btn_shadow {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.btn__btn_shadow-m {
+    height: 44px;
+}
+
+.btn__btn_shadow-s {
+    height: 30px;
+}
+

@@ -1,0 +1,179 @@
+html, body {
+    font-family: 'NotoSansKR',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #505050;
+    letter-spacing: -.5px;
+}
+
+button, input, select, textarea {
+    font-family: 'NotoSansKR',sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #505050;
+    letter-spacing: -.5px;
+}
+
+.p0 {
+    padding: 0px !important;
+}
+.p2 {
+    padding: 2px !important;
+}
+.p4 {
+    padding: 4px !important;
+}
+.p6 {
+    padding: 6px !important;
+}
+
+/* ~~~~~~ */
+.p64 {
+    padding: 64px !important;
+}
+
+.pt0 {
+    padding-top: 0px !important;
+}
+
+.pt2 {
+    padding-top: 2px !important;
+}
+
+.pt64 {
+    padding-top: 64px !important;
+}
+.pr0 {
+    padding-right: 0px !important;
+}
+.pr64 {
+    padding-right: 64px !important;
+}
+.pb0 {
+    padding-bottom: 0px !important;
+}
+
+.pb64 {
+    padding-bottom: 64px !important;
+}
+
+.pl0 {
+    padding-left: 0px !important;
+}
+
+.pl64 {
+    padding-left: 64px !important;
+}
+
+.px0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.px64 {
+    padding-left: 64px !important;
+    padding-right: 64px !important;
+}
+
+.py0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.py64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+
+.ma {
+    margin: auto !important;
+}
+
+.m0 {
+    margin: 0px !important;
+}
+.m64 {
+    margin: 64px !important;
+}
+
+.mt0 {
+    margin-top: 0px !important;
+}
+
+.mt64 {
+    margin-top: 64px !important;
+}
+
+.mta {
+    margin-top: auto !important;   
+}
+
+.mr0 {
+    margin-right: 0px !important;
+}
+
+.mr64 {
+    margin-right: 64px !important;
+}
+
+.mra {
+    margin-right: auto !important;
+}
+
+.mb0 {
+    margin-bottom: 0px !important;
+}
+
+.mb64 {
+    margin-bottom: 64px !important;
+}
+
+.mba {
+    margin-bottom: auto !important;
+}
+
+.ml0 {
+    margin-left: 0px !important;
+}
+
+.ml64 {
+    margin-left: 64px !important;
+}
+
+.mla {
+    margin-left: auto !important;
+}
+
+.mx0 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.mx64 {
+    margin-left: 64px !important;
+    margin-right: 64px !important;
+}
+
+.mxa {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.my0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+
+.my64 {
+    margin-top: 64px !important;
+    margin-bottom: 64px !important;
+}
+
+.mya {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+
+
+

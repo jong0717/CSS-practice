@@ -1,0 +1,58 @@
+.tab_bar {
+    position: relative;
+    width: 100%;
+}
+
+.tab_bar__container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 -1px 3px 0 rgba(0,0,0,.12);
+    box-sizing: border-box;
+}
+
+.tab_bar__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tab_bar__ico {
+    width: 100px;
+    height: 100%;
+    background: url("https://image.yeoboya.com/imgs/new_wedding/common/img_tab_bar_btn.png") no-repeat;
+    background-size: 100px 200px;   
+}
+
+.tab_bar__ico-marry {
+    background-position: 0 0;
+}
+
+.tab_bar__ico-marry.tab_bar__btn-active {
+    background-position: 0 -50px;
+}
+
+.tab_bar__ico-store {
+    background-position: 0 -100px;
+}
+
+.tab_bar__ico-store.tab_bar__btn-active {
+    background-position: 0 -150px;
+}
+
+.tab_bar__ico_home {
+    width: 100px;
+    height: 100%;
+    background: url("https://image.yeoboya.com/imgs/new_wedding/common/img_tab_bar_btn.png") no-repeat;
+    background-size:100px 100px;
+    background-position:0 0;
+}
+
+.tab_bar__ico_home.tab_bar__btn-active {
+    background-position: 0 -50px;
+}
+
