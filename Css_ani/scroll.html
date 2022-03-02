@@ -37,20 +37,26 @@
             let listItemTop = $('.todo__list_item').offset().top;
             let rectLeftTop = $('.left_center').offset().top;
             let rectRightTop = $('.right_center').offset().top;
-            if (100 < scrollTop) {
+            if (scrollTop+viewportTop > listItemTop) {
                 $('.todo__list_item').addClass('todo__list_item-on');
+            } else {
+                $('.todo__list_item').removeClass('todo__list_item-on');
             }
-            if (400 < scrollTop) {
+            if (scrollTop+viewportTop > rectLeftTop) {
                 $('.left_center').addClass('left_center-ani')
-            } 
-            if (500 < scrollTop) {
-                $('.right_center').addClass('right_center-ani')
+            } else {
+                $('.left_center').removeClass('left_center-ani')
             }
-            console.log('scrollTop :',scrollTop);
-            console.log('viewportTop :',viewportTop);
-            console.log('listItemTop :',listItemTop);
-            console.log('rectLeftTop: ',rectLeftTop);
-            console.log('rectRightTop :',rectRightTop);
+            if (scrollTop+viewportTop > rectRightTop) {
+                $('.right_center').addClass('right_center-ani')
+            } else {
+                $('.right_center').removeClass('right_center-ani')
+            }
+            // console.log('scrollTop :',scrollTop);
+            // console.log('viewportTop :',viewportTop);
+            // console.log('listItemTop :',listItemTop);
+            // console.log('rectLeftTop: ',rectLeftTop);
+            // console.log('rectRightTop :',rectRightTop);
         })
     </script>
 </body>
