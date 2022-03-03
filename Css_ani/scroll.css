@@ -20,6 +20,8 @@
     font-size: 20px;
     font-weight: 500;
     text-align: center;
+}
+.welcome__txt-on {
     animation-name: fadeIn;
     animation-duration: 2s;
 }
@@ -83,6 +85,7 @@
     position: relative;
     padding: 50px 123px 100%;
     background-color: #FFE8DF;
+    overflow: hidden;
 }
 
 .left_center {
