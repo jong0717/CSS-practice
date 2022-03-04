@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000163770146641751418620000015540280383156275840_);}
+	.st1{opacity:0;}
+	.st2{fill:#FFFFFF;}
+	.st3{fill:none;stroke:#707070;}
+	.st4{fill:none;stroke:#7595EF;stroke-width:3;stroke-linecap:round;stroke-dasharray:32,32,0;}
+	.st5{fill:none;}
+	.st6{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="36" height="36"/>
+	</defs>
+	<clipPath id="SVGID_00000046312693090164462710000005791963633599297211_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	
+		<g id="마스크_그룹_2" transform="translate(-247 -1470)" style="clip-path:url(#SVGID_00000046312693090164462710000005791963633599297211_);">
+		<g id="사각형_5" transform="translate(247 1470)" class="st1">
+			<rect class="st2" width="36" height="36"/>
+			<rect x="0.5" y="0.5" class="st3" width="35" height="35"/>
+		</g>
+		<path id="패스_2_00000050662003141498775990000017157627249955833013_" class="st4" d="M254.15,1486.89l9.46,8.34l12.24-14.46"
+			/>
+		<g id="사각형_4">
+			<path class="st5" d="M265,1470L265,1470c9.94,0,18,8.06,18,18l0,0c0,9.94-8.06,18-18,18l0,0c-9.94,0-18-8.06-18-18l0,0
+				C247,1478.06,255.06,1470,265,1470z"/>
+		</g>
+	</g>
+</g>
+<path class="st6" d="M19.81,20.42"/>
+<path class="st6" d="M77.95,28.41"/>
+</svg>

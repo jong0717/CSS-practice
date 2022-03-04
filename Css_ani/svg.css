@@ -1,0 +1,16 @@
+@keyframes svgAni {
+    0%{
+    stroke-dashoffset: 79;
+    }
+    100%{
+    stroke-dashoffset: -79;
+
+    }
+}
+
+.svg{
+    stroke: red;
+    stroke-dasharray: 79;
+    stroke-dashoffset: 79;
+    animation: svgAni 1s ease-in forwards;
+}

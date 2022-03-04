@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/marry/marry.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/src/scroll.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body class="pc__bg">
+    <div class="pc__container">
+        <div class="welcome">
+            <div class="welcome__circle"></div>
+            <div class="welcome__txt welcome__txt-on">Welcome</div>
+        </div>
+        <div class="todo__wrap">
+            <div class="todo__title">To Do List</div>
+            <ul class="todo__list">
+                <li class="todo__list_item">
+                    <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                        <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                    </svg>
+                    List 1
+                </li>
+                <li class="todo__list_item">
+                    <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                        <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                    </svg>
+                    List 2
+                </li>
+                <li class="todo__list_item">
+                    <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                        <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                    </svg>
+                    List 3
+                </li>
+                <li class="todo__list_item">
+                    <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                        <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                    </svg>
+                    List 4
+                </li>
+                <li class="todo__list_item">
+                    <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                        <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                    </svg>
+                    List 5
+                </li>
+            </ul>
+        </div>
+        <div class="rect">
+            <div class="left_center"></div>
+            <div class="right_center"></div>
+        </div>
+    </div>
+    <script>
+        $(window).scroll(function() {
+            let scrollTop = $(window).scrollTop();
+            // viewport 값.
+            let viewportTop = $(window).innerHeight();
+            // offset = 선택한 요소의 좌표값 가져오는 함수
+            // left : x축 좌표값, top : y축 좌표값
+            let welcomeTitTop = $('.welcome__txt').offset().top; 
+            let listItemTop = $('.todo__list_item').offset().top;
+            let rectLeftTop = $('.left_center').offset().top;
+            let rectRightTop = $('.right_center').offset().top;
+            if (scrollTop > welcomeTitTop) {
+                $('.welcome__txt').removeClass('welcome__txt-on')
+            } else {
+                $('.welcome__txt').addClass('welcome__txt-on')
+            }
+            if (scrollTop+viewportTop > listItemTop) {
+                $('.todo__list_item').addClass('todo__list_item-on');
+                $('.list_check_ani').addClass('list_check_ani-on');
+                $('.list_circle_ani').addClass('list_circle_ani-on');
+            } else {
+                $('.todo__list_item').removeClass('todo__list_item-on');
+                $('.list_check_ani').removeClass('list_check_ani-on');
+                $('.list_circle_ani').removeClass('list_circle_ani-on');
+            }
+
+            
+            if (scrollTop+viewportTop > rectLeftTop+(rectRightTop-rectLeftTop)/2) {
+                $('.left_center').addClass('left_center-ani')
+            } else if(scrollTop+viewportTop < rectLeftTop) {
+                $('.left_center').removeClass('left_center-ani')
+            }
+            if (scrollTop+viewportTop > rectRightTop+(rectRightTop-rectLeftTop)/2) {
+                $('.right_center').addClass('right_center-ani')
+            } else if (scrollTop+viewportTop < rectRightTop) {
+                $('.right_center').removeClass('right_center-ani')
+            }
+            // console.log('scrollTop :',scrollTop);
+            // console.log('viewportTop :',viewportTop);
+            // console.log('welcome:', welcomeTitTop);
+            // console.log('listItemTop :',listItemTop);
+            // console.log('rectTop :',rectTop);
+            // console.log('rectLeftTop: ',rectLeftTop);
+            // console.log('rectRightTop :',rectRightTop);
+        })
+        // path 길이를 구하고싶나?!! 
+        // let checkLen = document.querySelector('.todo__list_check').getTotalLength();
+        // console.log(checkLen);
+    </script>
+
+</body>
+</html>
