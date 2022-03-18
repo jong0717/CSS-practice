@@ -1,0 +1,47 @@
+
+.pop__msg {
+    position: absolute;
+    top: 20px;
+    min-height: 70px;
+    padding: 5px;
+    border-radius: 3px 3px 0 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 75px;
+}
+.pop__msg_box {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.photo_box {
+    position: relative;
+    z-index: 1;
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin-right: 5px;
+    border: 2px solid #d4d4d4;
+    background: #f8f8f8;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.photo_box img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.badge_re-position {
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100000;
+}
