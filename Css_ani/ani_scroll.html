@@ -7,7 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="../css/marry/marry.css">
 	<link rel="stylesheet" type="text/css" href="../css/marry/src/scroll.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/mobiscroll.jquery.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/marry/mbsc_custom.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mobiscroll.jquery.min.js"></script>
 </head>
 <body class="pc__bg">
     <div class="pc__container">
@@ -21,7 +25,7 @@
                 <li class="todo__list_item">
                     <svg class="todo__list_circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
                         <path class="list_check_ani" fill="none" stroke="#7595EF" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
-                        <path class="list_circle_ani" fill="none" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
+                        <path class="list_circle_ani" fill="rgb(117, 149, 239)" stroke="#7595EF" stroke-width="2" stroke-dasharray="122,110,0" d="M18 1c9.39 0 17 7.61 17 17s-7.61 17-17 17S1 27.39 1 18 8.61 1 18 1z"/>
                     </svg>
                     List 1
                 </li>
@@ -59,6 +63,58 @@
             <div class="left_center"></div>
             <div class="right_center"></div>
         </div>
+        <div class="bot_pop hidden">
+            <div class="bot_pop__bg"></div>
+            <div class="bot_pop__layer bot_pop__layer-slide_up">
+                <div class="pop_slct">
+                    <div class="pop_slct__top">
+                        <div class="pop_slct__tit pop_slct__tit-center">
+                            <span class="pop_slct__tit_txt">시간 선택</span>
+                        </div>
+                        <a class="pop_slct__btn_cls">
+                            <span class="pop_slct__ico_cls"></span>
+                            <span class="blind">닫기</span>
+                        </a>
+                    </div>
+                    <div class="pop_slct__content">
+                        <div class="mbsc_options">
+                            <div id="minute"></div>
+                        </div>
+                    </div>
+                    <div class="pop_slct__btn_wrap">
+                        <a class="btn__btn_default">
+                            <span class="btn__btn_default_txt">선택 완료</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot_pop">
+			<div class="bot_pop__bg"></div>
+			<div class="bot_pop__layer bot_pop__layer-slide_up">
+				<div class="pop_slct">
+					<div class="pop_slct__top">
+						<div class="pop_slct__tit">
+							<span class="pop_slct__tit_txt">생년월일</span>
+						</div>
+						<a class="pop_slct__btn_cls">
+							<span class="pop_slct__ico_cls"></span>
+							<span class="blind">닫기</span>
+						</a>
+					</div>
+					<div class="pop_slct__content">
+						<div class="mbsc_date">
+							<input id="date" hidden>
+						</div>
+					</div>
+					<div class="pop_slct__btn_wrap">
+						<a class="btn__btn_default">
+							<span class="btn__btn_default_txt">선택 완료</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
     <script>
         $(window).scroll(function() {
@@ -101,13 +157,49 @@
             // console.log('viewportTop :',viewportTop);
             // console.log('welcome:', welcomeTitTop);
             // console.log('listItemTop :',listItemTop);
-            // console.log('rectTop :',rectTop);
+            // console.log('rectTop :',rectTop); 
             // console.log('rectLeftTop: ',rectLeftTop);
             // console.log('rectRightTop :',rectRightTop);
+            // path 길이를 구하고싶나?!! 
+            // let checkLen = document.querySelector('.todo__list_check').getTotalLength();
+            // console.log(checkLen);
         })
-        // path 길이를 구하고싶나?!! 
-        // let checkLen = document.querySelector('.todo__list_check').getTotalLength();
-        // console.log(checkLen);
+        mobiscroll.customTheme('life_w', 'ios');
+        var wheel = [
+                // [{
+                //     circular: false,
+                //     data: ['00시', '01시', '02시', '03시', '04시', '04시', '05시', '06시', '07시', '08시', '09시', '10시', '11시', '12시', '13시', '14시', '15시', '16시', '17시', '18시', '19시', '20시', '21시', '22시', '23시']
+                // }, {
+                //     circular: false,
+                //     data: ['00분', '01분', '02분', '03분', '04분', '05분', '06분', '07분', '08분', '09분', '10분', '11분', '12분', '13분', '14분', '15분', '16분', '17분', '18분', '19분', '20분', '21분', '22분', '23분', '24분', '25분', '26분', '27분', '28분', '29분', '30분', '31분', '32분', '33분', '34분', '35분', '36분', '37분', '38분', '39분', '40분', '41분', '42분', '43분', '44분', '45분', '46분', '47분', '48분', '49분', '50분', '51분', '52분', '53분', '54분', '55분', '56분', '57분', '58분', '59분']
+                // }]
+                [{
+                    circular: false,
+                    data: ['子(자시) 23:30 ~ 01:29', '01시', '02시', '03시', '04시', '04시', '05시', '06시', '07시', '08시', '09시', '10시', '11시', '12시', '13시', '14시', '15시', '16시', '17시', '18시', '19시', '20시', '21시', '22시', '23시']
+                }]
+            ];
+
+        $('#minute').mobiscroll().scroller({
+            display: 'inline',
+            theme:'life_w',
+            wheels: wheel,
+            minWidth:100,
+            height:60,
+            circular:true
+            // maxWidth:120
+        });
+        // mobiscroll.customTheme('commu_w', 'ios');
+        // mobiscroll.customTheme('life_w','ios')
+        //생년월일
+		$("#date").mobiscroll().date({
+			display:'inline',
+			theme:'life_w',
+			controls: ['date'],
+			dateFormat: 'yy mm:dd',
+			minWidth:100,
+			height:60,
+			lang:'ko'
+		});
     </script>
 
 </body>

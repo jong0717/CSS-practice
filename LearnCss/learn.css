@@ -1,0 +1,39 @@
+[data-type='primary' s] {
+    color:red;
+}
+/* li dot에 스타일 지정 */
+li::marker {
+    color: red;
+    background-color: blue;
+}
+/* 드래그에 효과 */
+/* ::selection {
+    background: blue;
+    color: yellow;
+} */
+
+span::first-letter {
+    color: goldenrod;
+    font-weight: 700;
+}
+p::first-line {
+    color: goldenrod;
+    font-weight: 700;
+}
+.img_128x128 {
+    width: 128px;
+    height: 128px;
+    margin: 0;
+}
+.img_origin {
+    width: 100%;
+    height: 100%;
+}
+
+.aspect {
+    width: 100%; /* 요소 가로길이 지정 */
+    background: #cccccc;
+    /* padding-bottom: 56.25%; */
+    aspect-ratio: 300 / 250;
+}
+

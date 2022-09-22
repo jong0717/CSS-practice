@@ -1,0 +1,12 @@
+.sign__img_map {width:360px; height:230px; background: url("../Css_ani/image/bg_map.png") no-repeat center; background-size: 100% auto; animation: rotate 5s cubic-bezier(0,0,0,0) infinite ;}
+
+@keyframes rotate {
+    0% {
+        transform: translateX(-120%);
+    }
+
+    100% {
+        transform: translateX(120%);
+    }
+    
+}
