@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/marry/marry.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<style>
+    *{
+        margin: 0;
+    }
+    .stamp{
+        position: relative;
+    }
+    .stamp__box_wrap{
+        display: flex;
+        align-items: center;
+    }
+    .stamp__box{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        margin-right: 8px;
+        border: 1px solid black;
+    }
+    .stamp__ani{
+        position: absolute;
+        height:50px;
+        width:50px;
+        -webkit-animation-name: pulse;
+        animation-name: pulse;
+        animation-delay:.5s;
+        -webkit-animation-delay:.5s;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        opacity: 0;
+        -webkit-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+    }
+    .stamp__circle{
+        border-radius:50%;
+        background-color:#92f190;
+        opacity: 0.7;
+    }
+    @-webkit-keyframes pulse {
+        0%{
+            opacity: 0;
+        }
+        10%{
+            opacity:.50;
+            /* transform-origin: 50% 50%; */
+            transform: rotate(-2deg) scale(3);
+            transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+        }
+        100%{
+            opacity:1;
+            transform: rotate(0deg) scale(1);
+        }
+    }
+    .stamp__txt{
+        font-size: 14px;
+        font-weight: 700;
+        color: #202020;
+    }
+    .stamp__btn{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        font-weight: 700;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .stamp__btn:hover{
+        background: rgba(0,0,0,0.8);
+    }
+
+</style>
+
+<body class="pc__bg">
+    <div class="pc__container">
+        <div class="top">
+            <header class="header header-marry">
+                <div class="header__btn_left">
+					<a class="header__btn pl8">
+						<span class="header__ico_back"></span>
+						<span class="blind">뒤로</span>
+					</a>
+				</div>
+				<h1 class="header__tit pl20"><span class="header__tit_txt">찍어 찍어 스탬프</span></h1>
+				<div class="header__btn_wrap">
+					<a class="header__btn pr8">
+						<span class="header__ico_home mr4"></span>
+						<span class="blind">홈</span>
+					</a>
+				</div>
+			</header>
+        </div>
+        <div class="content px15 mt20">
+            <div class="stamp">
+                <div class="stamp__box_wrap">
+                    <div class="stamp__box">
+                        <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                        <div class="stamp__btn shadow1">보상받기</div>
+                        <div class="stamp__ani hidden">
+                            <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="stamp__box">
+                        <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                        <div class="stamp__btn shadow1">보상받기</div>
+                        <div class="stamp__ani hidden">
+                            <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop hidden">
+            <div class="pop__bg"></div>
+            <div class="pop__layer">
+                <div class="pop_alert">
+                    <div class="pop_alert__container">
+                        <div class="pop_alert__content">
+                            <div class="pop_alert__tit mb12">알림</div>
+                            <div class="pop_alert__txt_box">
+                                <p>기능이 없는 단순한 시스템 알림 팝업입니다.</p>
+                                <p class="pop_alert__sub_txt">(설명글이 붙었을 때)</p>
+                            </div>
+                        </div>
+                        <div class="pop_alert__btn_wrap">
+                            <a class="btn__btn_default btn__btn_default-m">
+                                <span class="btn__btn_default_txt">확인</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('.stamp__btn').on('click', function() {
+            $(this).addClass('hidden');
+            $('.pop').removeClass('hidden');
+            
+            $('.pop').addClass('hidden');
+            $(this).next('.stamp__ani').removeClass('hidden');
+        })
+    </script>
+</body>
+
+</html>

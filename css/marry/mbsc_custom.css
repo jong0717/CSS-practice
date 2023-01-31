@@ -7,32 +7,32 @@
 ---------------------------------------------*/
 
 /* 시간선택 */
-.mbsc-life_w.mbsc-fr-inline .mbsc-fr-w{margin:0; border:none; background:none; color:#202020; font-size:14px;}
-.mbsc-life_w.mbsc-fr-inline .mbsc-fr-c{border:none;}
-.mbsc-life_w .mbsc-sc-whl-w .mbsc-sc-itm{text-align: center; padding:0; font-size: 26px; color: #202020;}
-.mbsc-life_w .mbsc-sc-whl-w {width:100%;}
-.mbsc-life_w.mbsc-dt .mbsc-sc-itm{text-align: center; padding:0;}
-.mbsc-life_w.mbsc-no-touch .mbsc-sc-itm.mbsc-btn-e:hover,
-.mbsc-life_w .mbsc-sc-itm:focus{background-color:var(--primary-50);}
+.mbsc-fortune_w.mbsc-fr-inline .mbsc-fr-w{margin:0; border:none; background:none; color:#202020; font-size:14px;}
+.mbsc-fortune_w.mbsc-fr-inline .mbsc-fr-c{border:none;}
+.mbsc-fortune_w .mbsc-sc-whl-w .mbsc-sc-itm{text-align: center; padding:0; font-size: 26px; color: #202020;}
+.mbsc-fortune_w .mbsc-sc-whl-w {width:100%;}
+.mbsc-fortune_w.mbsc-dt .mbsc-sc-itm{text-align: center; padding:0;}
+.mbsc-fortune_w.mbsc-no-touch .mbsc-sc-itm.mbsc-btn-e:hover,
+.mbsc-fortune_w .mbsc-sc-itm:focus{background-color:var(--primary-50);}
 
-.mbsc-life_w .mbsc-cal-days{font-size: 21px;}
-.mbsc-life_w .mbsc-cal-day-date{position: relative; font-size: 19px;}
-.mbsc-life_w .mbsc-sc-whl-l{border-color:var(--primary-500);}
-.mbsc-life_w .mbsc-cal-cell{border: unset;}
-.mbsc-life_w .mbsc-cal-today{position: relative; color: unset;}
-.mbsc-life_w .mbsc-cal-today .mbsc-cal-cell-i .mbsc-cal-day-date::after{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 32px; height: 32px; border: 2px solid #585DEF; content: ""; border-radius: 50%;}
-.mbsc-life_w .mbsc-cal-c .mbsc-cal .mbsc-cal-body .mbsc-cal-row .mbsc-selected .mbsc-cal-cell-txt{border-color: #585DEF; background-color: #585DEF; color: #fff;}
-.mbsc-life_w .mbsc-cal-cell:focus .mbsc-cal-cell-txt, .mbsc-life_w.mbsc-no-touch:not(.mbsc-ev-cal) .mbsc-cal-cell:not(.mbsc-disabled):hover .mbsc-cal-cell-txt, .mbsc-life_w.mbsc-no-touch .mbsc-cal-day:not(.mbsc-disabled) .mbsc-cal-day-date:hover{background: unset;}
-.mbsc-life_w .mbsc-cal-year, .mbsc-ios .mbsc-cal-month{font-size: 15px; -webkit-box-flex:unset; -webkit-flex:unset; -ms-flex:unset; flex:0 0 30%; z-index: -1;}
-.mbsc-life_w .mbsc-cal-btn-w{display: flex; align-items: center; justify-content: center;}
+.mbsc-fortune_w .mbsc-cal-days{font-size: 21px;}
+.mbsc-fortune_w .mbsc-cal-day-date{position: relative; font-size: 19px;}
+.mbsc-fortune_w .mbsc-sc-whl-l{border-color:#FF63D0;}
+.mbsc-fortune_w .mbsc-cal-cell{border: unset;}
+.mbsc-fortune_w .mbsc-cal-today{position: relative; color: unset;}
+.mbsc-fortune_w .mbsc-cal-today .mbsc-cal-cell-i .mbsc-cal-day-date::after{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 32px; height: 32px; border: 2px solid #FF63D0; content: ""; border-radius: 50%;}
+.mbsc-fortune_w .mbsc-cal-c .mbsc-cal .mbsc-cal-body .mbsc-cal-row .mbsc-selected .mbsc-cal-cell-txt{border-color: #FF63D0; background-color: #FF63D0; color: #fff;}
+.mbsc-fortune_w .mbsc-cal-cell:focus .mbsc-cal-cell-txt, .mbsc-fortune_w.mbsc-no-touch:not(.mbsc-ev-cal) .mbsc-cal-cell:not(.mbsc-disabled):hover .mbsc-cal-cell-txt, .mbsc-fortune_w.mbsc-no-touch .mbsc-cal-day:not(.mbsc-disabled) .mbsc-cal-day-date:hover{background: unset;}
+.mbsc-fortune_w .mbsc-cal-year, .mbsc-ios .mbsc-cal-month{font-size: 15px; -webkit-box-flex:unset; -webkit-flex:unset; -ms-flex:unset; flex:0 0 30%; z-index: -1;}
+.mbsc-fortune_w .mbsc-cal-btn-w{display: flex; align-items: center; justify-content: center;}
 
-.mbsc-life_w.mbsc-sc .mbsc-sc-whl .mbsc-sc-itm.mbsc-active{background: none;}
-.mbsc-life_w .mbsc-cal .mbsc-cal-btn{color: #585DEF; font-size: 15px;}
+.mbsc-fortune_w.mbsc-sc .mbsc-sc-whl .mbsc-sc-itm.mbsc-active{background: none;}
+.mbsc-fortune_w .mbsc-cal .mbsc-cal-btn{color: #FF63D0; font-size: 15px;}
 
-/*.mbsc-life_w .mbsc-cal .mbsc-ic-arrow-left5{color: #FF5656; font-size: 15px;}
-.mbsc-life_w .mbsc-cal .mbsc-ic-arrow-right5{color: #FF5656; font-size: 15px;}*/
-.mbsc-life_w .mbsc-cal-marks{margin-top: -45px;}
-.mbsc-life_w .mbsc-cal-btn.mbsc-disabled{opacity: 1; color: #D4D4D4;}
-.mbsc-life_w .mbsc-cal-cell.mbsc-disabled .mbsc-cal-cell-txt{opacity: 1; color: #D4D4D4;}
-.mbsc-life_w .mbsc-cal-day-diff .mbsc-cal-day-date{opacity: 1; color:#909090}
-.mbsc-life_w .mbsc-cal-mark{width: 5px; height: 5px; border-radius: 50%; background: #17BC6F;}
+/*.mbsc-fortune_w .mbsc-cal .mbsc-ic-arrow-left5{color: #FF5656; font-size: 15px;}
+.mbsc-fortune_w .mbsc-cal .mbsc-ic-arrow-right5{color: #FF5656; font-size: 15px;}*/
+.mbsc-fortune_w .mbsc-cal-marks{margin-top: -45px;}
+.mbsc-fortune_w .mbsc-cal-btn.mbsc-disabled{opacity: 1; color: #D4D4D4;}
+.mbsc-fortune_w .mbsc-cal-cell.mbsc-disabled .mbsc-cal-cell-txt{opacity: 1; color: #D4D4D4;}
+.mbsc-fortune_w .mbsc-cal-day-diff .mbsc-cal-day-date{opacity: 1; color:#909090}
+.mbsc-fortune_w .mbsc-cal-mark{width: 5px; height: 5px; border-radius: 50%; background: #17BC6F;}

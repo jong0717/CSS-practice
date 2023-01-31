@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="side_bar.css">
+    <script src="https://kit.fontawesome.com/1ba12468be.js" crossorigin="anonymous"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<body class="pc__bg">
+    <div class="main_container">
+        <div class="top">
+            <header class="header">
+                <div class="header__btn pl8">
+                    <div class="header__ico_toggle"></div>
+                </div>
+                <div class="header__tit">사이드바 테스트</div>
+                <div class="header__btn mla pr8">
+                    <div class="header__ico_toggle"></div>
+                </div>
+            </header>
+        </div>
+        <div class="side_bar">
+            <ul class="side_bar__container side_bar__container-left">
+                <div class="side_bar__cls side_bar__cls-left"></div>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Shop</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Controls</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Folio</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Graphicals</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Papers</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Ass Finder</span></li>
+                <li class="side_bar__li"><div class="side_bar__ico"></div><span class="side_bar__ico_txt">Cocaine</span></li>
+            </ul>
+        </div>
+        <main class="content">
+            <div class="txt_box__wrap">
+                <div class="txt_box">아아아아</div>
+                <div class="txt_box">아아아아</div>
+                <div class="txt_box">아아아아</div>
+                <div class="txt_box">아아아아</div>
+                <div class="txt_box">아아아아</div>
+                <div class="txt_box">아아아아</div> 
+            </div>
+            <div class="chart_box">
+                <svg width="80" height="80" viewBox="0 0 80 80">
+                    <circle cx="40" cy="40" r="32" fill="transparent" stroke="#9BB0EE" stroke-width="8" stroke-dasharray="10 5"></circle>
+                </svg>
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+    $('.header__ico_toggle').on('click', function() {
+        $('.side_bar__container').addClass('side_bar__container-open');
+    })
+    $('.side_bar__cls').on('click', function() {
+        $('.side_bar__container').removeClass('side_bar__container-open');
+    })
+</script>
+</html>
