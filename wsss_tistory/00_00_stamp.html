@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/marry/marry.css">
+    <link rel="stylesheet" href="./stamp.css">
 </head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -26,13 +27,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100px;
-        height: 100px;
         margin-right: 8px;
         border: 1px solid black;
+        width: 100%;
+    }
+    .stamp__box_content {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    .stamp__ani_wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
     .stamp__ani{
-        position: absolute;
         height:50px;
         width:50px;
         -webkit-animation-name: pulse;
@@ -53,36 +62,49 @@
     @-webkit-keyframes pulse {
         0%{
             opacity: 0;
+            /* transform: translate(-50%, -50%); */
         }
         10%{
             opacity:.50;
-            /* transform-origin: 50% 50%; */
-            transform: rotate(-2deg) scale(3);
+            /* transform-origin: center; */
+            transform: scale(3);
             transition: all .3s cubic-bezier(0.6, 0.04, 0.98, 0.335);
         }
         100%{
             opacity:1;
-            transform: rotate(0deg) scale(1);
+            transform: scale(1);
         }
     }
+    .stamp__txt_wrap{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
     .stamp__txt{
-        font-size: 14px;
+        text-align: center;
+        font-size: 11px;
         font-weight: 700;
         color: #202020;
+        /* white-space: nowrap; */
     }
     .stamp__btn{
         position: absolute;
+        top: 50%;
+        left: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 80px;
-        height: 80px;
+        width: 80%;
+        height: 80%;
         border-radius: 8px;
         background: rgba(0, 0, 0, 0.6);
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 700;
         color: #ffffff;
         cursor: pointer;
+        transform: translate(-50%, -50%);
     }
     .stamp__btn:hover{
         background: rgba(0,0,0,0.8);
@@ -113,23 +135,70 @@
             <div class="stamp">
                 <div class="stamp__box_wrap">
                     <div class="stamp__box">
-                        <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
-                        <div class="stamp__btn shadow1">보상받기</div>
-                        <div class="stamp__ani hidden">
-                            <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
-                                <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
-                            </svg>
+                        <div class="stamp__box_content">
+                            <div class="stamp__txt_wrap">
+                                <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                            </div>
+                            <div class="stamp__btn shadow1">보상받기</div>
+                            <div class="stamp__ani_wrap hidden">
+                                <div class="stamp__ani">
+                                    <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                        <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="stamp__box">
-                        <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
-                        <div class="stamp__btn shadow1">보상받기</div>
-                        <div class="stamp__ani hidden">
-                            <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
-                                <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
-                            </svg>
+                        <div class="stamp__box_content">
+                            <div class="stamp__txt_wrap">
+                                <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                            </div>
+                            <div class="stamp__btn shadow1">보상받기</div>
+                            <div class="stamp__ani_wrap hidden">
+                                <div class="stamp__ani">
+                                    <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                        <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                                    </svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="stamp__box">
+                        <div class="stamp__box_content">
+                            <div class="stamp__txt_wrap">
+                                <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                            </div>
+                            <div class="stamp__btn shadow1">보상받기</div>
+                            <div class="stamp__ani_wrap hidden">
+                                <div class="stamp__ani">
+                                    <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                        <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stamp__box">
+                        <div class="stamp__box_content">
+                            <div class="stamp__txt_wrap">
+                                <div class="stamp__txt">10도장모으면 <br>3,000코인 지급</div>
+                            </div>
+                            <div class="stamp__btn shadow1">보상받기</div>
+                            <div class="stamp__ani_wrap hidden">
+                                <div class="stamp__ani">
+                                    <svg class="stamp__circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" xml:space="preserve">
+                                        <path fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-dasharray="32,32,0" d="m7.15 16.89 9.46 8.34 12.24-14.46"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circle">
+                <div class="circle__dash">
+                    <div class="circle__fill">3,000 코인</div>
                 </div>
             </div>
         </div>
@@ -160,9 +229,9 @@
         $('.stamp__btn').on('click', function() {
             $(this).addClass('hidden');
             $('.pop').removeClass('hidden');
-            
+
             $('.pop').addClass('hidden');
-            $(this).next('.stamp__ani').removeClass('hidden');
+            $(this).next('.stamp__ani_wrap').removeClass('hidden');
         })
     </script>
 </body>

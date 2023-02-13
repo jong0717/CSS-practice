@@ -1,0 +1,3 @@
+.circle{ display: flex; align-items: center; justify-content: center; width: 66px; height: 66px; border: 2px solid #00A481; border-radius: 50%; margin: 10px 0 0;}
+.circle__dash{display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; border: 1px dashed #00A481;border-radius: 50%;}
+.circle__fill{width: 52px; height: 52px; background-color: #FDFFEC;border-radius: 50%;}
